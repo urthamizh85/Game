@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Maas Cloud Demo</title>
+		<link href="assets/css/bootstrap.css" rel="stylesheet"/>
+		<link href="assets/css/font-awesome.css" rel="stylesheet"/>
+		<link href="assets/css/custom.css" rel="stylesheet"/>
+		<link href="assets/css/owl.carousel.css" rel="stylesheet"/>
+		<link href="assets/css/owl.theme.css" rel="stylesheet"/>
+		<link href="assets/css/owl.transitions.css" rel="stylesheet"/>
+		<link href='assets/css/fonts.css' rel='stylesheet' type='text/css'/>
+	</head>
+	<body class="login-page">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					
+					<div class="login-container">
+						<h2 class="text-center logo-text">Modular Interactive Game</h2>
+						<div class="loginbox bg-white">
+							<div class="loginbox-title">
+								SIGN IN
+							</div>
+							<div class="loginbox-textbox">
+								<label>Email</label>
+								<div class="input-group">
+									<span class="input-group-addon mandatory"><i class="fa fa-envelope"></i></span>
+									<input type="text" class="form-control" id="email" name="email" />
+								</div>
+							</div>
+							<div class="loginbox-textbox">
+								<label>Phone</label>
+								<div class="input-group">
+									<span class="input-group-addon mandatory"><i class="fa fa-phone"></i></span>
+									<input type="text" class="form-control" id="phone" name="phone" />
+								</div>
+							</div>
+
+							<div class="loginbox-submit">
+								<input type="button" class="btn btn-primary btn-block login-btn" value="Login" id="login_btn" onclick="window.location.href='index.html'">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/custom.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+		crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/js/jsPlumb-2.1.2-min.js"></script>
+		<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="assets/js/interact.min.js"></script>
+		<script>
+			/* jsPlumb.ready(function () {
+			 var common = {
+			 connector: "Flowchart",
+			 endpoint: "Dot",
+			 paintStyle: {strokeStyle: "lightgray", lineWidth: 3},
+			 endpointStyle: {fillStyle: "lightgray", outlineColor: "gray"},
+			 overlays: [
+			 ["Arrow", {width: 12, length: 12, location: 0.67}]
+			 ]
+			 };
+			 jsPlumb.setContainer($(".module-draggable"));
+
+			 var connections = [['prov', 'claims'], ['mem', 'claims'], ['tpl', 'claims'], ['ra', 'claims'], ['pa',
+			 'claims'], ['mem', 'edi'], ['edi', 'mem'], ['edi', 'claims'], ['claims', 'edi'], ['edi', 'claims'],
+			 ['claims', 'edi'], ['claims', 'pi']]
+			 for (var i = 0; i < connections.length; i++) {
+			 if ( i == 4 || i == 5 ) {
+			 jsPlumb.connect({
+			 source: connections[i][0],
+			 target: connections[i][1],
+			 anchors: ["Top", "Continuous"]
+			 }, common);
+			 } else if ( i == 2 ) {
+			 jsPlumb.connect({
+			 source: connections[i][0],
+			 target: connections[i][1],
+			 anchors: ["Bottom", "Bottom"],
+			 }, common);
+			 } else {
+			 jsPlumb.connect({
+			 source: connections[i][0],
+			 target: connections[i][1],
+			 anchor: "Continuous",
+			 }, common);
+			 }
+			 }
+
+			 });*/
+		</script>
+	</body>
+</html>

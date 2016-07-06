@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Maas Cloud Demo</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/font-awesome.css" rel="stylesheet"/>
+    <link href="assets/css/custom.css" rel="stylesheet"/>
+    <link href="assets/css/owl.carousel.css" rel="stylesheet"/>
+    <link href="assets/css/owl.theme.css" rel="stylesheet"/>
+    <link href="assets/css/owl.transitions.css" rel="stylesheet"/>
+    <link href='assets/css/fonts.css' rel='stylesheet' type='text/css'/>
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-cls-top " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Modular Interactive Game</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="btn btn-green">Time <span class="time-slot">05:00</span></a>
+                </li>
+                <li>
+                    <button class="btn btn-refresh" type="button" id="reset">
+                        <i aria-hidden="true" class="fa fa-refresh"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid module-section-bg">
+                <a href="#" class="close-module" id="closeBtn"> <i class="fa fa-times "></i></a>
+                <div id="categories" class="owl-carousel">
+                    <a href="#" class="mobule-box glossy cbg bg1 drag"><span>Ad Ons</span></a>
+                    <a href="#" class="mobule-box glossy cbg bg4 drag" data-target="Compliance Tracking"><span>Compliance Tracking</span></a>
+                    <a href="#" class="mobule-box glossy cbg bg2 drag" data-target="Medical Analytics"><span>Medical Analytics</span></a>
+                    <a href="#" class="mobule-box glossy cbg bg8 drag" data-target="Consumer Engagement"><span>Consumer Engagement</span></a>
+                    <a href="#" class="mobule-box glossy cbg bg3 drag"
+                       data-target="Core Claims"><span>Core Claims</span></a>
+                    <a href="#" class="mobule-box glossy cbg bg5 drag"
+                       data-target="EHR Incentive"><span>EHR Incentive</span></a>
+                    <a href="#" class="mobule-box glossy cbg bg6 drag" data-target="Eligibility Portal"><span>Eligibility Portal</span></a>
+                    <a href="#" class="mobule-box glossy cbg bg7 drag" data-target="Provider Management"><span>Provider Management</span></a>
+                </div>
+                <div id="blocks" class="owl-carousel" style="z-index: 1000;">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--
+            <div class="col-sm-2 module-section-bg sideBar hidden-sm" id="leftBar" style="z-index: 1000;">
+            <ul class="game-levels">
+            <li><a href="#">Level 1</a></li>
+            <li><a href="#">Level 2</a></li>
+            <li><a href="#">Level 3</a></li>
+            <li><a href="#">Level 4</a></li>
+            <li><a href="#">Level 5</a></li>
+            </ul>
+            </div>-->
+
+            <div class=" col-md-12 col-sm-12" id="basePlatform">
+                <img src="assets/img/SVG/Modular-Platform.png" alt="Modular Platform" class="img-responsive">
+            </div>
+
+        </div>
+    </div>
+
+    <!--
+    <div id="page-wrapper">
+    <div id="page-inner">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row">
+    <div class="col-md-8">
+    <div class="dropdown solution-dd">
+    <button class="btn btn-default dropdown-toggle" type="button" id="solutionSelect"
+    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Select Procurement Batch
+    <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="solutionSelect">
+    <li>
+    <a href="#">Procurement Batch 1</a>
+    </li>
+    <li>
+    <a href="#">Procurement Batch 2</a>
+    </li>
+    <li>
+    <a href="#">Procurement Batch 3</a>
+    </li>
+    </ul>
+
+    </div>
+    </div>
+    <div class="col-md-4">
+    <button type="button" class="btn btn-warning btn-lg pull-right" id="reset">
+    Reset
+    </button>
+    </div>
+    </div>
+    <hr/>
+    <div class="row">
+    <div class="col-md-12">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    Solution Stack
+    </div>
+
+    <div class="panel-body">
+    <div id="module-slot-drop">
+    <ul class="nav" id="drop-slot">
+
+    </ul>
+    </div>
+    <div id="core-slot-drop">
+    <ul class="nav">
+
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>-->
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/jsPlumb-2.1.2-min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/interact.min.js"></script>
+<script>
+    /* jsPlumb.ready(function () {
+     var common = {
+     connector: "Flowchart",
+     endpoint: "Dot",
+     paintStyle: {strokeStyle: "lightgray", lineWidth: 3},
+     endpointStyle: {fillStyle: "lightgray", outlineColor: "gray"},
+     overlays: [
+     ["Arrow", {width: 12, length: 12, location: 0.67}]
+     ]
+     };
+     jsPlumb.setContainer($(".module-draggable"));
+
+     var connections = [['prov', 'claims'], ['mem', 'claims'], ['tpl', 'claims'], ['ra', 'claims'], ['pa',
+     'claims'], ['mem', 'edi'], ['edi', 'mem'], ['edi', 'claims'], ['claims', 'edi'], ['edi', 'claims'],
+     ['claims', 'edi'], ['claims', 'pi']]
+     for (var i = 0; i < connections.length; i++) {
+     if ( i == 4 || i == 5 ) {
+     jsPlumb.connect({
+     source: connections[i][0],
+     target: connections[i][1],
+     anchors: ["Top", "Continuous"]
+     }, common);
+     } else if ( i == 2 ) {
+     jsPlumb.connect({
+     source: connections[i][0],
+     target: connections[i][1],
+     anchors: ["Bottom", "Bottom"],
+     }, common);
+     } else {
+     jsPlumb.connect({
+     source: connections[i][0],
+     target: connections[i][1],
+     anchor: "Continuous",
+     }, common);
+     }
+     }
+
+     });*/
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+
+    window.onload = function () {
+        var fiveMinutes = 60 * 5, display = document.querySelector('.time-slot');
+        startTimer(fiveMinutes, display);
+    };
+
+</script>
+</body>
+</html>
